@@ -1,0 +1,8 @@
+{%extends 'base.html'%}
+{% block body%}
+<form method="post">
+    {%csrf_token%}
+    <h4>Are you sure want to delete your {{task.name}}?</h4>
+    <input type="submit" class="btn btn-danger">
+</form>
+{%endblock%}
